@@ -38,7 +38,10 @@ class separacion():
         #importar modelo entrenado
         print("Cargando estado anterior de modelo...")
         try:
-            state= torch.load(path)
+            if(self.gpu):
+                state= torch.load(path)
+            else:
+                state= torch.load(path, map_location='cpu')
             self.model.load_state_dict(state["state_dict"])
         except:
             print("El modelo entrenado indicado no existe o hubo un error al cargarlo.")
