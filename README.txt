@@ -21,6 +21,7 @@
   + json
   + numpy (1.15.2)
   + opencv-python (3.4.2.17)
+  + opencv-contrib-python (3.4.2.17)
   + os
   + scikit-image (0.14.0)
   + scikit-learn (0.20.0)
@@ -96,10 +97,10 @@ The model "modelo/entrenado" included was trained using the project Entrenamient
 with synthetic data obtained from the project GenData.
 
 Link to EntrenamientoRed project:
-
+https://github.com/sfenoglio/EntrenamientoRed
 
 Link to GenData project:
-
+https://github.com/sfenoglio/GenData
 
 
 =================================
